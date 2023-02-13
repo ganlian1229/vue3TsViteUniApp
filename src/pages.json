@@ -1,0 +1,73 @@
+{
+  "easycom": {
+    "custom": {
+      "^u-(.*)": "uview-plus/components/u-$1/u-$1.vue",
+      "^u--(.*)": "uview-plus/components/u--$1/u--$1.vue"
+    }
+  },
+  "pages": [
+    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "uni-vue3-ts-template"
+      }
+    },
+    {
+      "path": "pages/service/service",
+      "style": {
+        "navigationBarTitleText": "一键服务"
+      }
+    },
+    {
+      "path": "pages/my/my",
+      "style": {
+        "navigationBarTitleText": "个人中心"
+      }
+    },
+    {
+      "path": "pages/choice/choice",
+      "style": {
+        "navigationBarTitleText": "在线选楼"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-vue3-ts-template",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#666464",
+    "selectedColor": "#24724b",
+    "backgroundColor": "#fff",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./static/icon-index.png",
+        "selectedIconPath": "./static/icon-index-act.png"
+      },
+      {
+        "pagePath": "pages/choice/choice",
+        "text": "在线选楼",
+        "iconPath": "./static/icon-choice.png",
+        "selectedIconPath": "./static/icon-choice-act.png"
+      },
+      {
+        "pagePath": "pages/service/service",
+        "text": "一键服务",
+        "iconPath": "./static/icon-service.png",
+        "selectedIconPath": "./static/icon-service-act.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "./static/icon-my.png",
+        "selectedIconPath": "./static/icon-my-act.png"
+      }
+    ]
+  }
+}
